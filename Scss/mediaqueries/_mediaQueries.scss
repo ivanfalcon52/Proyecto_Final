@@ -1,151 +1,3 @@
-*{ margin: 0;
-padding: 0;
-font-family: 'Libre Baskerville', serif;
-box-sizing: border-box;
-}
-
-body{background-color: white;
-}
-
-.nav_menu {background-color:rgb(0, 0, 0);
-    padding: 10px ; 
-    height: 83px;
-    display: flex ;
-    justify-content: space-between ;
-    align-items: center ;
-}
-
-.dropdown {
-    display:none;
-}
-
-.navegacion{
-    padding: 0px !important;
-    margin: 0px !important;
-}
-
-.textoNav{
-    color: rgb(255, 255, 255);
-    margin:0;
-    margin-left: 30px;
-}
-
-.search{
-    border-radius: 4px;
-    border: 4px solid aliceblue;
-    font-size: small;
-}
-
-.navegacion li{
-    display: inline-block;
-    margin-right: 35px;
-    padding: 6px; 
-}
-
-.navegacion li a{
-    text-decoration: none;
-    color: rgb(255, 252, 252);
-}
-
-.navegacion li a:hover{
-    color: rgb(67, 87, 103);
-}
-
-.iconos-mobile {
-    display: none;
-    margin: 0;
-    padding: 0;
-}
-
-.iconos-mobile li {
-    display: inline-block;
-    margin-right: 13px;
-}
-
-.main {
-    height: 80vh;
-    display: flex;
-    justify-content: space-around;
-}
-
-.contenedor_txtmain{
-    align-self: center;
-}
-
-.textMain{
-text-align: center;
-}
-
-.textmain2{
-    text-align: center;
-}
-
-.btn_index{
-    text-align: center;
-}
-.btn_index a{
-    background-color: black;
-    border-radius: 1rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    padding:10px;
-    text-align: center;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-}
-
-
-.imgMain{
-    align-self: center;
-}
-
-.imgMain img{
-    height: 550px;
-    width: 900px;
-    border: 5px solid black;
-}
-
-.btn_mobile {
-    display: none;
-    text-align: center;
-}
-
-.btn_mobile a{
-    background-color: black;
-    border-radius: 1rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    padding:10px;
-    text-align: center;
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-}
-
-.footer_absolute{
-    background-color: rgb(0, 0, 0);;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right:0;
-    height: 35px;
-}
-
-.pieTxt1 p{
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-}
-
-.pieTxt2 p{
-    color: rgb(255, 255, 255);
-    font-size: 13px;
-}
-
 @media screen and (min-width: 450px) {
     .nav_menu{
         height: 50px;
@@ -171,6 +23,15 @@ text-align: center;
 
     .iconos-mobile{
         display: block;
+    }
+
+    .nav_aside {
+        display:none;
+    }
+
+    .dropdown-prod {
+        display: block;
+        width: 100%;
     }
 
     .main{
@@ -202,6 +63,39 @@ text-align: center;
     .btn_mobile{
         display: block;
     }
+    
+    .carousel h1 {
+        font-size: 45px;
+        margin-top: 50px;
+    }
+
+    #carouselExampleCaptions{
+        width: 80%;
+        height: 80%;
+        margin-top: 110px;
+    }
+
+    .carousel-caption h5{
+        font-size: 12px;
+    }
+
+    .carousel-caption p{
+        font-size: 10px;
+    }
+
+    .text-title {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .grilla{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
 
     .pieTxt1 p{
         margin-top: 15px;
@@ -212,6 +106,8 @@ text-align: center;
         margin-top: 15px;
         font-size: 10px;
     }
+
+    
 }
 
 @media screen and (min-width: 600px) {
@@ -234,6 +130,29 @@ text-align: center;
     }
 }
 
+@media screen and (min-width: 700px) {
+    .carousel h1 {
+        font-size: 55px;
+        margin-top: 40px;
+    }
+
+    #carouselExampleCaptions{
+        width: 80%;
+        height: 80%;
+        margin-top: 75px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .card-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
 @media screen and (min-width: 1024px) {
     .dropdown{
         display: none;
@@ -266,6 +185,14 @@ text-align: center;
         font-size: 13px;
     }
 
+    .dropdown-prod{
+        display: none;
+    }
+
+    .nav_aside {
+        display: block;
+    }
+
     .main {
         height: 89vh;
         flex-direction: row;
@@ -291,6 +218,12 @@ text-align: center;
         display: none;
     }
 
+    .grilla{
+        grid-template-rows: 1fr;
+        grid-template-columns: 250px;
+        
+    }
+
     .pieTxt1 p{
         font-size: 12px;
     }
@@ -298,10 +231,29 @@ text-align: center;
     .pieTxt2 p{
         font-size: 12px;
     }
+
+    .carousel h1 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    
+    #carouselExampleCaptions{
+        width: 70%;
+        height: 70%;
+        margin-top: 40px;
+    }
+    .carousel-caption h5{
+        font-size: 16px;
+    }
+
+    .carousel-caption p{
+        font-size: 13px;
+    }
 }
+
     @media screen and (min-width: 1200px) {
         .nav_menu{
-            height: 60px;
+            height: 70px;
         }
         .textoNav{
             font-size: 38px;
@@ -311,19 +263,32 @@ text-align: center;
         }
         .imgMain img{
             height: auto;
-            width: 600px;
+            width: 700px;
+        }
+
+        #carouselExampleCaptions{
+            width: 70%;
+            height: 70%;
+            margin-top: 0px;
         }
     }
 
     @media screen and (min-width: 1400px) {
         .textoNav {
             margin-left: 30px;
-            font-size: 45px;
+            font-size: 50px;
         }
         .search {
             width: 320px;
             height: 25px;
         }
+
+
+        .navegacion li{
+            margin-right: 35px;
+            padding: 6px; 
+        }
+
         .navegacion li a{
             font-size: 17px;
         }
@@ -338,10 +303,30 @@ text-align: center;
 
         .imgMain img{
             height: auto;
-            width: 700px;
+            width: 900px;
         }
 
         .btn_index a {
             font-size: 17px;
         }
+
+        #carouselExampleCaptions{
+            width: 60%;
+            height: 60%;
+        }
+
+        .carousel-caption h5{
+            font-size: 22px;
+        }
+
+        .carousel-caption p{
+            font-size: 15px;
+        }
     }
+
+    @media screen and (min-width: 1600px) {
+        #carouselExampleCaptions{
+            width: 55%;
+            height: 55%;
+        }
+}

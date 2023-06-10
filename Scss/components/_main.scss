@@ -1,0 +1,46 @@
+.main {
+    height: 80vh;
+}
+
+.contenedor_txtmain{
+    align-self: center;
+}
+
+.textMain{
+text-align: center;
+}
+
+.textmain2{
+    text-align: center;
+}
+
+.imgMain{
+    align-self: center;
+    img{
+        height: 550px;
+        width: 900px;
+        border: 5px solid black;
+    }
+}
+
+.main_contacto{
+    height: 89vh;
+}
+
+.grilla{
+    margin-bottom: 40px;
+}
+.card-container{
+    gap:20px
+}
+.dropdown-prod {
+    display: none;
+}
+
+.text-title{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

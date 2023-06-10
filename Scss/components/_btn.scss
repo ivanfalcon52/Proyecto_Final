@@ -1,0 +1,32 @@
+.btn_index{
+    text-align: center;
+    a{
+        background-color: map-get($paleta_de_colores,secundario);
+        border-radius: 1rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding:10px;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+.btn_mobile {
+    display: none;
+    text-align: center;
+    a{
+        background-color: map-get($paleta_de_colores,secundario);
+        border-radius: 1rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding:10px;
+        text-align: center;
+        font-size: 15px;
+        text-decoration: none;
+        color: map-get($paleta_de_colores,primario);
+    }
+}
+
