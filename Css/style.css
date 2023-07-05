@@ -125,6 +125,7 @@ body {
 .nav_aside {
   border-right: 2px solid black;
   background-color: gray;
+  height: 110%;
 }
 
 .cont-nav ul {
