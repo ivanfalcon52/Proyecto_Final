@@ -1,4 +1,4 @@
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 320px) {
     .nav_menu{
         height: 50px;
     }
@@ -8,9 +8,9 @@
     }
 
     .textoNav {
-        font-size: 25px;
+        font-size: 15px;
         text-align: center;
-        margin: 0;
+
     }
 
     .navegacion{
@@ -23,6 +23,150 @@
 
     .iconos-mobile{
         display: block;
+    }
+
+    .nav_aside {
+        display:none;
+    }
+
+    .dropdown-prod {
+        display: block;
+        width: 100%;
+    }
+
+    .main{
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor_txtmain{
+        width: 100%;
+    }
+    .textMain{
+        margin-top: 70px;
+        font-size: 30px;
+    }
+
+    .textmain2 {
+        font-size: 35px;
+    }
+    .btn_index{
+        display: none;
+    }
+
+    .imgMain img{
+        width: 318px;
+        height: auto;
+    }
+
+    .btn_mobile{
+        display: block;
+    }
+
+    .btn_mobile a{
+        margin-left: 1px;
+        margin-right: 5px;
+
+    }
+    
+    .carousel h1 {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    #carouselExampleCaptions{
+        width: 90%;
+        height: 90%;
+        margin-top: 100px;
+    }
+    .carousel-caption h5{
+        font-size: 10px;
+    }
+
+    .carousel-caption p{
+        font-size: 8px;
+    }
+
+    .text-title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .grilla{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card-description h3{
+        font-size: 19px;
+    }
+
+    .card-description p{
+        font-size: 13px;
+    }
+
+    .main_contacto {
+        display:block;
+    }
+
+    .main_contacto form h1{
+        font-size:35px;
+    }
+
+    .main_contacto input {
+        height: 27px;
+        width: 200px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    .main_contacto textarea {
+        height:100px;
+        width: 310px;
+        margin-left: 5px;
+    }
+
+    .contact_data h1{
+        font-size: 35px;
+        margin-top: 35px;
+        text-align: center;
+    }
+
+    .contact_data p{
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .media {
+        text-align: center;
+    }
+
+    .pieTxt1 p{
+        margin-top: 15px;
+        font-size: 7px;
+    }
+
+    .pieTxt2 p{
+        margin-top: 15px;
+        font-size: 7px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+
+    .textoNav {
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .iconos-mobile a{
+        font-size: medium;
     }
 
     .nav_aside {
@@ -106,8 +250,6 @@
         margin-top: 15px;
         font-size: 10px;
     }
-
-    
 }
 
 @media screen and (min-width: 600px) {
@@ -143,7 +285,23 @@
     }
 
     .card-container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .main_contacto {
+        display: flex
+    }
+
+    .main_contacto p {
+        margin-left: 30px;
+    }
+
+    .media{
+        margin-left:30px;
+        text-align: center;
     }
 }
 
@@ -271,26 +429,45 @@
             height: 70%;
             margin-top: 0px;
         }
+
+        .main_contacto input {
+            height: 30px;
+            width: 300px;
+            margin-bottom: 15px;
+            margin-left: 5px;
+        }
+    
+        .main_contacto textarea {
+            height:200px;
+            width: 450px;
+            margin-left: 5px;
+        }
+
+        .main_contacto form h1{
+            font-size: 60px;
+        }
+        .contact_data h1{
+            font-size: 60px;
+        }
+
+        .contact_data p{
+            font-size: 15px;
+        }
     }
 
     @media screen and (min-width: 1400px) {
-        .textoNav {
-            margin-left: 30px;
-            font-size: 50px;
-        }
         .search {
             width: 320px;
             height: 25px;
         }
 
-
         .navegacion li{
-            margin-right: 35px;
-            padding: 6px; 
+            margin-right: 30px;
+            padding: 4px; 
         }
 
         .navegacion li a{
-            font-size: 17px;
+            font-size: 16px;
         }
 
         .textMain{
@@ -322,9 +499,17 @@
         .carousel-caption p{
             font-size: 15px;
         }
-    }
+    
+        .card-description h3{
+            font-size: 19px;
+        }
 
-    @media screen and (min-width: 1600px) {
+        .contact_data p{
+            font-size: 20px;
+        }
+}
+    
+@media screen and (min-width: 1600px) {
         #carouselExampleCaptions{
             width: 55%;
             height: 55%;
